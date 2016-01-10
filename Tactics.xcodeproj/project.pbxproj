@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		547A9CF81C373F9100A6E0E4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A9CF71C373F9100A6E0E4 /* OpenGL.framework */; };
+		547A9D081C37458A00A6E0E4 /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 547A9D071C37458A00A6E0E4 /* graphics.cpp */; };
+		547A9D0B1C37860300A6E0E4 /* gamemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 547A9D0A1C37860300A6E0E4 /* gamemanager.cpp */; };
+		547A9D101C399D6C00A6E0E4 /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 547A9D0F1C399D6C00A6E0E4 /* entity.cpp */; };
+		547A9D171C3C7DE600A6E0E4 /* entitymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 547A9D161C3C7DE600A6E0E4 /* entitymanager.cpp */; };
+		54D396FD1C37356D00419D37 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DB65E11C372D6500E5D840 /* SDL2.framework */; };
 		54DB65DB1C372BD800E5D840 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54DB65DA1C372BD800E5D840 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +29,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		547A9CF71C373F9100A6E0E4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		547A9D061C37457D00A6E0E4 /* graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphics.h; sourceTree = "<group>"; };
+		547A9D071C37458A00A6E0E4 /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphics.cpp; sourceTree = "<group>"; };
+		547A9D091C3785E100A6E0E4 /* gamemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamemanager.h; sourceTree = "<group>"; };
+		547A9D0A1C37860300A6E0E4 /* gamemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gamemanager.cpp; sourceTree = "<group>"; };
+		547A9D0C1C379F6900A6E0E4 /* resourcemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resourcemanager.cpp; sourceTree = "<group>"; };
+		547A9D0D1C379F8700A6E0E4 /* resourcemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resourcemanager.h; sourceTree = "<group>"; };
+		547A9D0E1C39497400A6E0E4 /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
+		547A9D0F1C399D6C00A6E0E4 /* entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = entity.cpp; sourceTree = "<group>"; };
+		547A9D111C39B59F00A6E0E4 /* component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = component.h; sourceTree = "<group>"; };
+		547A9D141C39D9BD00A6E0E4 /* drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawable.h; sourceTree = "<group>"; };
+		547A9D151C3B346F00A6E0E4 /* entitymanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entitymanager.h; sourceTree = "<group>"; };
+		547A9D161C3C7DE600A6E0E4 /* entitymanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = entitymanager.cpp; sourceTree = "<group>"; };
 		54DB65D71C372BD800E5D840 /* Tactics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tactics; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DB65DA1C372BD800E5D840 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		54DB65E11C372D6500E5D840 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,15 +52,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547A9CF81C373F9100A6E0E4 /* OpenGL.framework in Frameworks */,
+				54D396FD1C37356D00419D37 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		547A9D041C37455E00A6E0E4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				547A9D121C39B60500A6E0E4 /* components */,
+				547A9D091C3785E100A6E0E4 /* gamemanager.h */,
+				547A9D061C37457D00A6E0E4 /* graphics.h */,
+				547A9D0D1C379F8700A6E0E4 /* resourcemanager.h */,
+				547A9D0E1C39497400A6E0E4 /* entity.h */,
+				547A9D151C3B346F00A6E0E4 /* entitymanager.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		547A9D051C37456700A6E0E4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				547A9D131C39B61C00A6E0E4 /* components */,
+				547A9D0A1C37860300A6E0E4 /* gamemanager.cpp */,
+				547A9D071C37458A00A6E0E4 /* graphics.cpp */,
+				547A9D0C1C379F6900A6E0E4 /* resourcemanager.cpp */,
+				547A9D0F1C399D6C00A6E0E4 /* entity.cpp */,
+				547A9D161C3C7DE600A6E0E4 /* entitymanager.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		547A9D121C39B60500A6E0E4 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				547A9D111C39B59F00A6E0E4 /* component.h */,
+				547A9D141C39D9BD00A6E0E4 /* drawable.h */,
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
+		547A9D131C39B61C00A6E0E4 /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
 		54DB65CE1C372BD800E5D840 = {
 			isa = PBXGroup;
 			children = (
+				547A9CF71C373F9100A6E0E4 /* OpenGL.framework */,
+				54DB65E11C372D6500E5D840 /* SDL2.framework */,
 				54DB65D91C372BD800E5D840 /* Tactics */,
 				54DB65D81C372BD800E5D840 /* Products */,
 			);
@@ -57,6 +123,8 @@
 		54DB65D91C372BD800E5D840 /* Tactics */ = {
 			isa = PBXGroup;
 			children = (
+				547A9D051C37456700A6E0E4 /* src */,
+				547A9D041C37455E00A6E0E4 /* include */,
 				54DB65DA1C372BD800E5D840 /* main.cpp */,
 			);
 			path = Tactics;
@@ -118,7 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547A9D101C399D6C00A6E0E4 /* entity.cpp in Sources */,
 				54DB65DB1C372BD800E5D840 /* main.cpp in Sources */,
+				547A9D171C3C7DE600A6E0E4 /* entitymanager.cpp in Sources */,
+				547A9D081C37458A00A6E0E4 /* graphics.cpp in Sources */,
+				547A9D0B1C37860300A6E0E4 /* gamemanager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,14 +279,22 @@
 		54DB65DF1C372BD800E5D840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				OTHER_CFLAGS = "-I/include/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include/;
 			};
 			name = Debug;
 		};
 		54DB65E01C372BD800E5D840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				OTHER_CFLAGS = "-I/include/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include/;
 			};
 			name = Release;
 		};
@@ -237,6 +317,7 @@
 				54DB65E01C372BD800E5D840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
